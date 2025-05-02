@@ -1,11 +1,10 @@
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #49a09d;
@@ -15,7 +14,6 @@ body {
     height: 100vh;
 }
 
-/* Main Styling */
 main {
     display: flex;
     justify-content: flex-start;
@@ -25,7 +23,6 @@ main {
     transition: all 0.3s ease;
 }
 
-/* Add User Button */
 #addUserButton {
     position: absolute;
     top: -50px;
@@ -42,9 +39,9 @@ main {
     background-color: #3a456e;
 }
 
-/* Table Styling */
+
 table {
-    width: 100%; /* Default full width */
+    width: 100%; 
     border-collapse: collapse;
     margin-top: 20px;
     margin-right: 20px; 
@@ -55,7 +52,7 @@ table {
 }
 
 table.shrink {
-    width: calc(100% - 300px); /* Reduce the table width to make space for the modal */
+    width: calc(100% - 300px); 
     margin-right: 300px;
 }
 
@@ -78,12 +75,12 @@ img {
     border-radius: 50%;
 }
 
-/* Modal (Add User Form) Styling */
+
 #userModal{
     width: 30%;
 }
 #userModal.show {
-    display: block; /* Show the modal when active */
+    display: block; 
 }
 
 #userModal h2 {
@@ -147,16 +144,16 @@ img {
     background-color: #3a456e;
 }
 
-/* Cancel Button Styling */
+
 #formCancelBtn {
-    background-color: #d9534f; /* Red background for Cancel */
+    background-color: #d9534f; 
 }
 
 #formCancelBtn:hover {
-    background-color: #c9302c; /* Darker red for Cancel */
+    background-color: #c9302c; 
 }
 main:has(#userModal.show) table {
-    width: 65%; /* Shrink table when modal is visible */
+    width: 65%; 
 }
 
 main table {
