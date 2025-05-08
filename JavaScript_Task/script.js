@@ -2,7 +2,7 @@
 const apiUrl = 'https://reqres.in/api/users?page=1&&per_page=15';
 
 
-fetch(apiUrl)
+fetch(apiUrl,{ 'headers': { 'x-api-key': 'reqres-free-v1 '} })
     .then(response => response.json())
     
     .then(response => {
