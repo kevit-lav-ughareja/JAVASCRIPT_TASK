@@ -18,10 +18,8 @@
   <body>
     <main>
       
-      <button id="addUserButton" onclick="showAddUserForm()">Add User</button>
-
-      
-      <table >
+      <button id="addUserButton" onclick="openUserForm('add')">Add User</button>
+      <table id="user-table" >
         <thead>
           <tr>
             <th>Avatar</th>
@@ -42,11 +40,11 @@
         <form id="userForm" onsubmit="handleUserForm(event)">
           <input type="hidden" id="userId">
           <label for="formFirstName">First Name:</label>
-          <input type="text" id="formFirstName" required>
+          <input type="text" id="formFirstName" >
           <label for="formLastName">Last Name:</label>
-          <input type="text" id="formLastName" required>
+          <input type="text" id="formLastName" >
           <label for="formAvatar">Avatar URL:</label>
-          <input type="url" id="formAvatar" required>
+          <input type="url" id="formAvatar" >
           <button type="submit" id="formSubmitBtn"></button>
           <button type="button" id="formCancelBtn" onclick="hideUserForm()">Cancel</button>
         </form>
