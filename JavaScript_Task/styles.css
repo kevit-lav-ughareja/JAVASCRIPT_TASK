@@ -1,55 +1,53 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html, body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #49a09d; 
-    height: 100%;
-    overflow-x: hidden;
-    
+html,
+body {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+  background-color: #49a09d;
+  height: 100%;
+  overflow-x: hidden;
 }
-main{
-    background-color: #49a09d;
-    display: flex;
-    height: 100vh;
-    width: 100vw;
-    flex: 1;
-    padding: 20px;
-    justify-content: center;
-    
-    
+main {
+  background-color: #49a09d;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex: 1;
+  padding: 20px;
+  justify-content: center;
 }
 
 table {
-    width: 50%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    background-color: #49a09d; 
-    color: white;
-    border: solid 2px white;
+  width: 50%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #49a09d;
+  color: white;
+  border: solid 2px white;
 }
 
 thead {
-    background-color: #4B578C ;
-    
+  background-color: #4b578c;
+  font-family: "Mea Culpa";
 }
 
-th, td {
-    padding: 12px;
-    text-align: left;
-    text-align: center;
-    
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  text-align: center;
 }
 
 tr:hover {
-    background-color: #4B578C ;
+  background-color: #4b578c;
 }
 
-img{
-    width: 40px;
-    height: 40px;
+img {
+  width: 40px;
+  height: 40px;
 }
