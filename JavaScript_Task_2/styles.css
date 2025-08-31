@@ -1,0 +1,162 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #49a09d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 90%;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+#addUserButton {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    background-color: #4B578C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#addUserButton:hover {
+    background-color: #3a456e;
+}
+
+
+table {
+    width: 100%; 
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-right: 20px; 
+    background-color: #49a09d;
+    color: white;
+    transition: all 0.3s ease;
+    overflow-y:scroll
+}
+
+table.shrink {
+    width: calc(100% - 300px); 
+    margin-right: 300px;
+}
+
+thead {
+    background-color: #4B578C;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #4B578C;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+#userModal{
+    width: 30%;
+}
+#userModal.show {
+    display: block; 
+}
+
+#userModal h2 {
+    margin-bottom: 20px;
+    color: #4B578C;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#userModal label {
+    margin: 10px 0 5px;
+    color: white;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+#userModal input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+#userModal input:focus {
+    outline: none;
+    border-color: #4B578C;
+}
+
+#userModal button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4B578C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#userModal button:hover {
+    background-color: #3a456e;
+}
+#userModal button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4B578C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+#userModal button:hover {
+    background-color: #3a456e;
+}
+
+
+#formCancelBtn {
+    background-color: #d9534f; 
+}
+
+#formCancelBtn:hover {
+    background-color: #c9302c; 
+}
+main:has(#userModal.show) table {
+    width: 65%; 
+}
+
+main table {
+    width: 100%;
+    transition: width 0.3s ease;
+}

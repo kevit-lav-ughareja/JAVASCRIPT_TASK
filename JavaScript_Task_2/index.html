@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users Details</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      
+      <button id="addUserButton" onclick="openUserForm('add')">Add User</button>
+      <table id="user-table" >
+        <thead>
+          <tr>
+            <th>Avatar</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+         
+        </tbody>
+      </table>
+      </div>
+
+      
+      <div id="userModal" style="display:none;">
+        <h2 id="formTitle"></h2>
+        <form id="userForm" onsubmit="handleUserForm(event)">
+          <input type="hidden" id="userId">
+          <label for="formFirstName">First Name:</label>
+          <input type="text" id="formFirstName" >
+          <label for="formLastName">Last Name:</label>
+          <input type="text" id="formLastName" >
+          <label for="formAvatar">Avatar URL:</label>
+          <input type="url" id="formAvatar" >
+          <button type="submit" id="formSubmitBtn"></button>
+          <button type="button" id="formCancelBtn" onclick="hideUserForm()">Cancel</button>
+        </form>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
